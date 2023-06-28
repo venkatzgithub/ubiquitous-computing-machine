@@ -30,6 +30,7 @@ pipeline {
     stage('PR') {
       steps {
         // sh 'cat Dockerfile'
+       sh 'ls'
        echo "print target branch: ${env.CHANGE_ID}"
       }
     }
